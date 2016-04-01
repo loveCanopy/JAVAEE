@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="rice"
+  id="myeclipse.1342832301800"
+  context-root="/rice"
+  j2ee-spec="5.0"
+  archive="rice.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+
