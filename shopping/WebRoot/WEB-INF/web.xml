@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>loginclservlet</servlet-name>
+    <servlet-class>com.model.loginclservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>showdetailservlet</servlet-name>
+    <servlet-class>com.model.showdetailservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>showmycartservlet</servlet-name>
+    <servlet-class>com.model.showmycartservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>shoppingservlet</servlet-name>
+    <servlet-class>com.model.shoppingservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>orderclservlet</servlet-name>
+    <servlet-class>com.model.orderclservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>gotocartservlet</servlet-name>
+    <servlet-class>com.model.gotocartservlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>loginclservlet</servlet-name>
+    <url-pattern>/loginclservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showdetailservlet</servlet-name>
+    <url-pattern>/showdetailservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showmycartservlet</servlet-name>
+    <url-pattern>/showmycartservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>shoppingservlet</servlet-name>
+    <url-pattern>/shoppingservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>orderclservlet</servlet-name>
+    <url-pattern>/orderclservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>gotocartservlet</servlet-name>
+    <url-pattern>/gotocartservlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
