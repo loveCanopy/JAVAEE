@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<package name="user"  namespace="/"  extends="struts-default">
+<interceptors>
+<interceptor name="mySimple" class="interceptor.Myinterceptor"></interceptor>
+</interceptors>
+<global-results>
+<result name="fail">/index.jsp</result>
+<result name="input">/index.jsp</result>
+</global-results>
+<action name="user_*" class="Action.UserAction" method="{1}" >
+<interceptor-ref name="defaultStack"/>
+<interceptor-ref name="mySimple"></interceptor-ref> 
+<result name="success" type="redirectAction">user_list</result>
+<result name="list">/list.jsp</result>
+</action>
+</package>
+
+
+</struts>          

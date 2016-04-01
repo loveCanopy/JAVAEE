@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="sh">
+<class name="Project" table="project">
+<id name="proid">
+<generator class="native"></generator>
+</id>
+<property name="proname" type="string"></property>
+<set name="users" table="relation">
+<key column="pro_id"></key>
+<many-to-many column="user_id" class="User"></many-to-many>
+</set>
+
+</class>
+
+</hibernate-mapping>
